@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": [
+      "es2020"
+    ],
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "baseUrl": "./",
+    "paths": {
+        "/opt/nodejs/products-layer": [
+            "./src/applications/products/layers/products-layer/nodejs/product-repository",
+        ],
+        "/opt/nodejs/products-events-layer": [
+            "./src/applications/products/layers/products-events-layer/nodejs/product-events",
+        ],
+        "/opt/nodejs/orders-layer": [
+            "./src/applications/orders/layers/order-layer/nodejs/order-repository"
+        ],
+        "/opt/nodejs/orders-events-layer": [
+            "./src/applications/orders/layers/order-events-layer/nodejs/order-event"
+        ],
+        "/opt/nodejs/invoice-layer": [
+            "./src/applications/invoices/layers/invoices/nodejs/index"
+        ],
+        "/opt/nodejs/auth-user-info": [
+            "./src/applications/auth/layers/auth-user-info/nodejs/index"
+        ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "cdk.out"
+  ]
+}
